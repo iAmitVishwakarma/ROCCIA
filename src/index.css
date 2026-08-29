@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Soligant";
+  src: url("./assets/Soligant.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-display: "Soligant", serif;
+  --font-sans: "Lato", sans-serif;
+
+  --color-luxury-accent-gold: #c5a059;
+  --color-luxury-cream: #f2f1ea;
+  --color-luxury-off-white: #f8f5f2;
+  --color-luxury-burgundy: #3d0404;
+  --color-luxury-black: #554c50;
+  --text-hero-main: 128px;
+  --text-hero-main-tablet: 80px;
+  --text-hero-main-mobile: 48px;
+  --text-hero-sub: 24px;
+  --text-hero-sub-mobile: 14px;
+
+  --spacing-hero-gap: 24px;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-black text-white;
+  }
+}
+
+/* body{
+  filter: hue-rotate();
+} */
